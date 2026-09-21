@@ -1,0 +1,529 @@
+/* -------------------- */
+/* GENERAL */
+/* -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+
+  background-color: #f5f7fa;
+
+  color: #252525;
+}
+
+
+/* -------------------- */
+/* SIDEBAR */
+/* -------------------- */
+
+.sidebar {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 250px;
+
+  height: 100vh;
+
+  background-color: #14213d;
+
+  padding: 35px 25px;
+
+  color: white;
+}
+
+
+.logo {
+  margin-bottom: 50px;
+}
+
+
+.logo h1 {
+
+  margin: 0;
+
+  font-size: 27px;
+}
+
+
+.logo p {
+
+  margin-top: 5px;
+
+  color: #b8c0d0;
+}
+
+
+/* -------------------- */
+/* NAVIGATION */
+/* -------------------- */
+
+nav ul {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+nav li {
+  margin-bottom: 15px;
+}
+
+
+nav a {
+
+  display: block;
+
+  text-decoration: none;
+
+  color: #d9deea;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+
+nav a i {
+
+  width: 25px;
+
+  margin-right: 8px;
+}
+
+
+nav a:hover {
+
+  background-color: #253656;
+
+  color: white;
+}
+
+
+/* -------------------- */
+/* MAIN */
+/* -------------------- */
+
+main {
+
+  margin-left: 250px;
+}
+
+
+/* -------------------- */
+/* HERO */
+/* -------------------- */
+
+.hero {
+
+  min-height: 350px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 60px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      rgba(20, 33, 61, 0.75),
+      rgba(20, 33, 61, 0.9)
+    ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+
+.hero-content {
+  max-width: 700px;
+}
+
+
+.small-title {
+
+  font-size: 13px;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  color: #fca311;
+}
+
+
+.hero h1 {
+
+  font-size: 48px;
+
+  margin: 10px 0;
+}
+
+
+.hero p {
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+
+/* -------------------- */
+/* SECTIONS */
+/* -------------------- */
+
+section {
+
+  padding: 60px;
+
+  border-bottom: 1px solid #dfe3e8;
+}
+
+
+section h2 {
+
+  margin-top: 0;
+
+  font-size: 30px;
+
+  color: #14213d;
+}
+
+
+.section-description {
+
+  color: #6c757d;
+
+  margin-bottom: 35px;
+}
+
+
+/* -------------------- */
+/* COLORS */
+/* -------------------- */
+
+.color-container {
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+
+.color-card {
+
+  background-color: white;
+
+  width: 220px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.color-box {
+
+  height: 120px;
+
+  border-radius: 8px;
+}
+
+
+.navy {
+  background-color: #14213d;
+}
+
+.blue {
+  background-color: #3a86ff;
+}
+
+.orange {
+  background-color: #fca311;
+}
+
+.light {
+  background-color: #e5e5e5;
+}
+
+
+/* -------------------- */
+/* TYPOGRAPHY */
+/* -------------------- */
+
+.font-container {
+
+  display: flex;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+
+.font-card {
+
+  width: 45%;
+
+  background-color: white;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+
+.italic {
+  font-style: italic;
+}
+
+
+.playfair {
+
+  font-family: "Playfair Display", serif;
+}
+
+
+/* -------------------- */
+/* TEXT STYLES */
+/* -------------------- */
+
+.text-card {
+
+  background-color: white;
+
+  padding: 25px;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.text-card h1 {
+
+  font-size: 40px;
+
+  font-weight: 700;
+}
+
+
+.text-card h2 {
+
+  font-size: 28px;
+
+  font-weight: 600;
+}
+
+
+/* -------------------- */
+/* BUTTONS */
+/* -------------------- */
+
+.buttons-container {
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+
+button {
+
+  padding: 13px 25px;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  border: none;
+
+  transition: 0.3s;
+}
+
+
+.primary-button {
+
+  background-color: #14213d;
+
+  color: white;
+}
+
+
+.primary-button:hover {
+
+  background-color: #253656;
+}
+
+
+.secondary-button {
+
+  background-color: #3a86ff;
+
+  color: white;
+}
+
+
+.secondary-button:hover {
+
+  background-color: #1769dd;
+}
+
+
+.outline-button {
+
+  background-color: transparent;
+
+  border: 2px solid #14213d;
+
+  color: #14213d;
+}
+
+
+.outline-button:hover {
+
+  background-color: #14213d;
+
+  color: white;
+}
+
+
+/* -------------------- */
+/* OTHER ELEMENTS */
+/* -------------------- */
+
+.example-card {
+
+  background-color: white;
+
+  padding: 25px;
+
+  max-width: 450px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  margin-bottom: 25px;
+}
+
+
+.alert {
+
+  background-color: #e7f1ff;
+
+  color: #1b4f8a;
+
+  padding: 18px;
+
+  border-radius: 8px;
+
+  max-width: 600px;
+}
+
+
+.alert i {
+  margin-right: 10px;
+}
+
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  background-color: #14213d;
+
+  color: white;
+}
+
+
+/* -------------------- */
+/* RESPONSIVE */
+/* -------------------- */
+
+@media (max-width: 800px) {
+
+  .sidebar {
+
+    position: static;
+
+    width: 100%;
+
+    height: auto;
+  }
+
+
+  main {
+
+    margin-left: 0;
+  }
+
+
+  .font-card {
+
+    width: 100%;
+  }
+
+
+  section {
+
+    padding: 35px 20px;
+  }
+
+
+  .hero {
+
+    padding: 40px 20px;
+  }
+
+
+  .hero h1 {
+
+    font-size: 36px;
+  }
+
+}
